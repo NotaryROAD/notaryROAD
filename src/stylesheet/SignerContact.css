@@ -1,0 +1,16 @@
+
+.signer-contact{
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

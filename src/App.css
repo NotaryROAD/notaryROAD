@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,12 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body{
+    background-color: #F7C747;
+    /* font-family: 'Gotham Pro', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+}
+.formFooter, .formFooter-wrapper{
+  display: none;
 }

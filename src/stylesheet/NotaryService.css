@@ -1,0 +1,22 @@
+.flex-div{
+    width: 700px;
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+  height: max-content;
+    margin: auto;
+    /* border: 1px solid red; */
+    flex-direction: column;
+}
+.flex-div2{
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+  height: max-content;
+    margin: 10px;
+    /* border: 1px solid red; */
+    flex-direction: row
+}
+p{
+  font-weight: 300;
+}
