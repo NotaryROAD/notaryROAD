@@ -1,6 +1,7 @@
 {
   "name": "notaryroad",
   "version": "0.1.0",
+  "homepage": "https://akankshat05.github.io/notaryROAD/",
   "private": true,
   "dependencies": {
     "@aws-sdk/client-s3": "^3.222.0",
@@ -43,6 +44,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
@@ -71,6 +74,7 @@
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
+    "gh-pages": "^4.0.0",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
     "process": "^0.11.10",
