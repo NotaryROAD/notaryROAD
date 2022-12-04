@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/notaryROAD/static/css/main.12b98a76.css",
+    "main.js": "/notaryROAD/static/js/main.925fa318.js",
+    "static/js/787.2b9d2300.chunk.js": "/notaryROAD/static/js/787.2b9d2300.chunk.js",
+    "static/media/notary.svg": "/notaryROAD/static/media/notary.93c807618ace5b6fa2dde4e881b660bb.svg",
+    "index.html": "/notaryROAD/index.html",
+    "main.12b98a76.css.map": "/notaryROAD/static/css/main.12b98a76.css.map",
+    "main.925fa318.js.map": "/notaryROAD/static/js/main.925fa318.js.map",
+    "787.2b9d2300.chunk.js.map": "/notaryROAD/static/js/787.2b9d2300.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12b98a76.css",
+    "static/js/main.925fa318.js"
+  ]
+}
