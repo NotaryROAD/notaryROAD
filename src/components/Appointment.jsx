@@ -1,6 +1,6 @@
 import React from 'react'
 import { InlineWidget } from "react-calendly";
-import JotformEmbed from 'react-jotform-embed';
+// import JotformEmbed from 'react-jotform-embed';
 import '../stylesheet/Appointment.css'
 import { Link } from 'react-router-dom'
 import mainLogo from'./notary.svg';
@@ -46,7 +46,7 @@ const Appointment = () => {
       }}
     />
    </div>
-     <JotformEmbed src="https://form.jotform.com/223332088505048" />
+     {/* <JotformEmbed src="https://form.jotform.com/223332088505048" /> */}
      <Link to='/signer-contact'><div className='submit-app' onClick={handleProceed}>PROCEED</div></Link>
      </div>
     </>
