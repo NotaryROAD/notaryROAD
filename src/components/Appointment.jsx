@@ -1,11 +1,19 @@
 import React from 'react'
 import { InlineWidget } from "react-calendly";
 import JotformEmbed from 'react-jotform-embed';
-import mainLogo from'./final_logo.svg';
 import '../stylesheet/Appointment.css'
 import { Link } from 'react-router-dom'
+import mainLogo from'./notary.svg';
 
 const Appointment = () => {
+  const handleProceed = () => {
+    // var correct = document.getElementById("positive");
+    // var incorrect = document.getElementsById("error");
+    // if(!correct || incorrect ){
+    //   alert("verify email first")
+    // }
+  }
+  
   // useEffect(() => {     
   //     const ifrm = document.getElementById("appointy-iframe");
   //         window.addEventListener("message", function (e) {
@@ -21,8 +29,9 @@ const Appointment = () => {
   //     ,[]);
   return (
     <>
-    {/* <iframe id="appointy-iframe" class="no-border" src="https://booking.appointy.com/notaryroad?isgadget=1&autoheight=1"  scrolling="no" width="100%" frameBorder="0"></iframe>
-<div style={{margin: 20}}>  */}
+    <img src={mainLogo} style={{position: "absolute", top:2, left: 2, width: 200}} />
+    {/* <iframe id="appointy-iframe" class="no-border" src="https://booking.appointy.com/notaryroad?isgadget=1&autoheight=1"  scrolling="no" width="100%" frameBorder="0"></iframe> */}
+<div style={{margin: 20}}>  
 <div className='flex-box'>
       <InlineWidget
       url='https://calendly.com/akanksha-t05/30min'
@@ -38,7 +47,7 @@ const Appointment = () => {
     />
    </div>
      <JotformEmbed src="https://form.jotform.com/223332088505048" />
-     <Link to='/signer-contact'><div className='submit-app'>SUBMIT</div></Link>
+     <Link to='/signer-contact'><div className='submit-app' onClick={handleProceed}>PROCEED</div></Link>
      </div>
     </>
   )

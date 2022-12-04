@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { useFormik } from 'formik';
-import mainLogo from'./final_logo.svg';
+import mainLogo from'./notary.svg';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField'
 import '../stylesheet/SignerContact.css'
 var CryptoJS = require("crypto-js");
 const SignerContact = () => {
+  
   const [sessionID, setSessionID] = useState("");  
   function handleImageUpload(e) {
     const reader = new FileReader();
@@ -163,7 +164,7 @@ const SignerContact = () => {
   });
   return (
     <>
-    
+      <img src={mainLogo} style={{position: "absolute", top:2, left: 2, width: 200}} />
     {/* <img src={mainLogo} style={{position: "absolute", top:2, left: 2}} /> */}
           {/* value={formik.values.firstName} */}
         <form onSubmit={formik.handleSubmit} className='signer-contact'>
@@ -194,14 +195,24 @@ const SignerContact = () => {
           }} id="standard-basic" name="number"     onChange={formik.handleChange} required placeholder="Number" variant="standard" />
           <TextField sx={{
             width: 500,
-            marginBottom: 2
           }} id="standard-basic" name="country"     onChange={formik.handleChange} required placeholder="Country" variant="standard" />
           {/* <button type="submit">Submit</button> */}
         </form>
         <div className="submit-btn">
-        <Button variant="outlined" onClick={handleDataClick} style={{marginBottom: 10}}>Submit Data</Button>
-        <Button variant="outlined">Upload Docs</Button>
+        <Button variant="outlined" style={{marginBottom: 10}}>Submit Data</Button>
+<label htmlFor="upload-photo">
+  <input
+    style={{ display: 'none' }}
+    id="upload-photo"
+    name="upload-photo"
+    type="file"
+  />
+  <Button variant="outlined" component="span">
+    Upload docs
+  </Button>
+</label>
         </div>
+        <Link to='/notary-service'><div className='submit-app' style={{marginTop: 10}}>PROCEED</div></Link>
       {/* <button onClick={handleDataClick}>Submit Data</button>
       <input style={{ display: 'none' }} id='fileUpload' type='file' onChange={handleImageUpload} />
       <button variant="outlined"><label htmlFor='fileUpload'>Upload Document</label></button>

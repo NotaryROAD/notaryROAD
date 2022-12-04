@@ -4,13 +4,15 @@
 // You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
+// string date, string time, string address, string id, string notary, 
+//     string badge, string doc
 const hre = require("hardhat");
 async function main() {
   // We get the contract to deploy
-  const MyContract = await ethers.getContractFactory("MyContract");
-  const con = await MyContract.deploy();
-  await con.deployed();
-  console.log("tr deployed to:", con.address);
+  const Transaction = await hre.ethers.getContractFactory("MyContract");
+  const contract = await Transaction.deploy();
+  await contract.deployed();
+  console.log("transation contract deployed to:", contract.address);
 }
 main()
   .then(() => process.exit(0))
@@ -18,4 +20,3 @@ main()
     console.error(error);
     process.exit(1);
   });
- 

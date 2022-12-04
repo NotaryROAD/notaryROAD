@@ -44,3 +44,47 @@ body{
 .formFooter, .formFooter-wrapper{
   display: none;
 }
+.notary-options {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.same-div{
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.4));
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.content-meet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 500px;
+   flex-direction: column;
+}
+.home-styles{
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.4));
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 50px;
+  right: 10%;
+  bottom: 10%
+  }

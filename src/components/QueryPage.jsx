@@ -1,12 +1,13 @@
 import React from 'react'
-import mainLogo from'./final_logo.svg';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import '../stylesheet/QueryPage.css'
 import TextField from '@mui/material/TextField'
+import mainLogo from'./notary.svg';
 const QueryPage = () => {
   return (
     <>
+      <img src={mainLogo} style={{position: "absolute", top:2, left: 2, width: 200}} />
       <div className='query'>
 
         <TextField sx={{
