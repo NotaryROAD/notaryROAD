@@ -62,7 +62,7 @@ function NotaryFormFunc(){
 }
 function App() {
   return (
-    <Router basename="/notaryROAD">
+    <Router>
       <Routes>
         {/* HOME PAGE */}
        
