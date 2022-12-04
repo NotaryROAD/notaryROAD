@@ -1,8 +1,8 @@
 {
   "name": "notaryroad",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://akankshat05.github.io/notaryROAD/",
+  "private": false,
+  "homepage": "https://akankshat05.github.io/notaryROAD",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.222.0",
     "@aws-sdk/s3-request-presigner": "^3.222.0",

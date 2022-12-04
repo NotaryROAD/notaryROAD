@@ -62,11 +62,11 @@ function NotaryFormFunc(){
 }
 function App() {
   return (
-    <Router>
+    <Router basename="/notaryROAD">
       <Routes>
         {/* HOME PAGE */}
        
-        <Route path="/" element={<UserTypeFunc />} />
+        <Route exact path="/" element={<UserTypeFunc />} />
         {/* APPOINTMENT AND EMAIL VERIFICATION PAGE FOR SIGNER */}
         <Route path="/appointment" element={<AppointmentFunc />} />
         {/* SIGNER CONTACT AND UPLOAD VERIFICATION DOCS PAGE */}
