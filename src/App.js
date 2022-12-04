@@ -62,25 +62,29 @@ function NotaryFormFunc(){
 }
 function App() {
   return (
-    <Router>
+    <>
+    {/* <UserTypeFunc /> */}
+    {/* <Router> */}
       <Routes>
-        {/* HOME PAGE */}
+   
        
         <Route path="/" element={<UserTypeFunc />} />
-        {/* APPOINTMENT AND EMAIL VERIFICATION PAGE FOR SIGNER */}
+       
         <Route path="/appointment" element={<AppointmentFunc />} />
-        {/* SIGNER CONTACT AND UPLOAD VERIFICATION DOCS PAGE */}
+       
         <Route path="/signer-contact" element={<SignerContactFunc />} />
-        {/* NOTARY SERVICE OR PAYMENT PAGE.. IF notary review SUCCESSFUL */}
+    
         <Route path="/notary-service" element={<NotaryServiceFunc />} />
-        {/* NOTARY REVIEW DECLINED..IF notary review FAILED. */}
+   
         <Route path="/query" element={<QueryPageFunc />} />
         <Route path="/user-meeting" element={<MeetingFunc />} />
         <Route path="/notary" element={<NotaryOptionsFunc />} />
         <Route path="/notary-meeting" element={<NotaryMeetingFunc />} />
         <Route path="/notary-form" element={<NotaryFormFunc />} />
       </Routes>
-    </Router>
+    {/* </Router> */}
+
+    </>
   );
 }
 
