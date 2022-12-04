@@ -66,7 +66,7 @@ function App() {
       <Routes>
         {/* HOME PAGE */}
        
-        <Route exact path="/" element={<UserTypeFunc />} />
+        <Route path="/" element={<UserTypeFunc />} />
         {/* APPOINTMENT AND EMAIL VERIFICATION PAGE FOR SIGNER */}
         <Route path="/appointment" element={<AppointmentFunc />} />
         {/* SIGNER CONTACT AND UPLOAD VERIFICATION DOCS PAGE */}

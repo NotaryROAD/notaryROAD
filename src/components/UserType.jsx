@@ -40,15 +40,8 @@ console.log(accounts)
 
   return (
     <>
-      {/* <span className="holder">
- <span className="holder-content">
- Let's get started!
- </span>
-</span> */}
       <img src={mainLogo} style={{position: "absolute", top:2, left: 2, width: 200}} />
     <div>
-      {/* <button onClick={enableEth}>ENABLE</button> */}
-      {/* <button onClick={sendTransaction}>ENABLE send</button> */}
     <div className='header'>
 
     <Typewriter
